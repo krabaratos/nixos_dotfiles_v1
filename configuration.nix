@@ -63,6 +63,7 @@
     alsa.support32Bit = true;
     pulse.enable = true;
     jack.enable = true;
+};
 
    #AMD GPU Drivers
    hardware.graphics = {
