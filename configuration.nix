@@ -6,6 +6,7 @@
      ./hardware-configuration.nix
      ./gaming.nix
      ./kde.nix
+     ./amd.nix
     ];
 
  #Settings
@@ -65,17 +66,6 @@
     jack.enable = true;
 };
 
-   #AMD GPU Drivers
-   hardware.graphics = {
-    enable = true;
-    enable32Bit = true;
-    extraPackages = with pkgs; [
-     mesa 
-     vulkan-loader 
-     vulkan-tools 
-     vulkan-validation-layers
-    ];
-  };
   
   #User Settings
   users.users.manish = {
