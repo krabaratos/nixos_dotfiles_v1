@@ -5,8 +5,13 @@
   
   services.displayManager.sddm = {
     enable = true;
-    theme = "sddm-sugar-dark";
-    extraPackages = [ pkgs.sddm-sugar-dark ];
+    theme = "sddm-astronaut-theme";
+    wayland.enable = true;
+    extraPackages = [ 
+      kdePackages.qtmultimedia
+      kdePackages.qtsvg
+      kdePackages.qtvirtualkeyboard
+      kdePackages.qtbase ];
   };
   services.desktopManager.plasma6.enable = true;
 
@@ -19,8 +24,9 @@
     kdePackages.sddm-kcm
     kdePackages.kpipewire
     libportal-qt6
-    sddm-sugar-dark
+    sddm-astronaut
   ];
 }
+
 
 
