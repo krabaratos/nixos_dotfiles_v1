@@ -82,9 +82,7 @@
     ];
   };
   
-  #Gaming
-  programs.steam.dedicatedServer.openFirewall = true;
-  programs.steam.remotePlay.openFirewall = true;
+ 
 
   #GPU Drivers
   hardware.graphics = {
