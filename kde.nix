@@ -2,7 +2,12 @@
 
 {
   # Enable the KDE Plasma Desktop Environment.
-  services.displayManager.sddm.enable = true;
+  
+  services.displayManager.sddm = {
+    enable = true;
+    theme = "sddm-sugar-dark-theme";
+    extraPackages = [ pkgs.sddm-sugar-dark ];
+  };
   services.desktopManager.plasma6.enable = true;
 
   # Optional: add KDE apps
@@ -17,3 +22,4 @@
     sddm-sugar-dark
   ];
 }
+
