@@ -5,7 +5,7 @@
   
   services.displayManager.sddm = {
     enable = true;
-    theme = "sddm-sugar-dark-theme";
+    theme = "sddm-sugar-dark";
     extraPackages = [ pkgs.sddm-sugar-dark ];
   };
   services.desktopManager.plasma6.enable = true;
@@ -22,4 +22,5 @@
     sddm-sugar-dark
   ];
 }
+
 
