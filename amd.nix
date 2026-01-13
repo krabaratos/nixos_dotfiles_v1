@@ -7,7 +7,7 @@
     enable32Bit = true;
  };
 
-  # Optional: add KDE apps
+  #AMD GPU Driver Packages
   environment.systemPackages = with pkgs; [
      mesa 
      vulkan-loader 
