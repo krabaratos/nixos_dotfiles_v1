@@ -2,11 +2,13 @@
 
 {
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+    [
+     ./hardware-configuration.nix
     ];
-  
+
+  #Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -14,11 +16,8 @@
   # Use latest kernel.
   boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest;
 
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-
   # Enable networking
+  networking.hostName = "nixos";
   networking.networkmanager.enable = true;
 
   # Set your time zone.
@@ -134,6 +133,6 @@
  kdePackages.kpipewire
  ];
 
-  system.stateVersion = "25.11"; # Did you read the comment?
+  system.stateVersion = "25.11"; 
 
 }
