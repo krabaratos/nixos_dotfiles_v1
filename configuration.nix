@@ -88,6 +88,7 @@ javaPackages.compiler.openjdk21
 jdk21_headless
 jre21_minimal
 neofetch
+vscode
  ];
 
   system.stateVersion = "25.11"; 
