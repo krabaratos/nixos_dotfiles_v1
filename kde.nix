@@ -23,9 +23,11 @@
     kdePackages.flatpak-kcm
     kdePackages.sddm-kcm
     kdePackages.kpipewire
+    kdePackages.kcalc
     libportal-qt6
     sddm-astronaut
   ];
 }
+
 
 
