@@ -83,6 +83,7 @@ appimage-run
 discord
 firefox
 flatpak-xdg-utils
+git
 htop
 javaPackages.compiler.openjdk21
 jdk21_headless
