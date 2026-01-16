@@ -80,16 +80,20 @@
   #System Level packages
   environment.systemPackages = with pkgs; [
 appimage-run
+android-tools
 discord
 firefox
 flatpak-xdg-utils
 git
+gvfs
 htop
 javaPackages.compiler.openjdk21
 jdk21_headless
 jre21_minimal
 neofetch
 vscode
+obs-studio
+qtscrcpy
  ];
 
   system.stateVersion = "25.11"; 
